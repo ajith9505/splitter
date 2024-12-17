@@ -1,0 +1,61 @@
+.outer-box {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-box {
+  height: 100%;
+  width: 100%;
+  border-width: thin;
+}
+
+#box-1 {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#box-2 {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#box-3 {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#box-4 {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+@keyframes zoomInOut {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.click {
+  position: absolute;
+  top: 8.2rem;
+  left: 5.8rem; 
+  color: rgb(118, 196, 124);
+  font-size: 2rem;
+  animation: zoomInOut 2s infinite;
+}
